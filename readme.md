@@ -17,6 +17,34 @@ This project focuses on improving credit risk assessment in the financial sector
 - [Contributing](#contributing)
 - [License](#license)
 
+Usage
+You can use this project for credit default prediction by following these steps:
+
+Clone this repository.
+Run the Jupyter Notebook (credit_default_prediction.ipynb) to explore the project, including data preprocessing, model development, and evaluation.
+Utilize the trained model for making credit default predictions on new data.
+Model Selection
+We have implemented and evaluated various machine learning algorithms for credit default prediction, including:
+
+Logistic Regression
+Random Forest
+Support Vector Machine (SVM)
+XGBoost
+Multilayer Perceptron (MLP) Neural Network
+The project notebook provides a comprehensive analysis of each algorithm's performance and the selection of the most effective model.
+
+Model Evaluation
+We evaluate the model using key metrics, such as ROC AUC, accuracy, precision, recall, and F1 score. This analysis helps us assess the model's effectiveness and its ability to balance sensitivity and specificity.
+
+Deployment
+To deploy the model, we recommend using a Flask web application, allowing real-time credit default predictions via a user-friendly interface. Detailed deployment instructions can be found in the deployment/ directory.
+
+Contributing
+If you would like to contribute to this project, please follow the standard guidelines for open-source contributions. We welcome any enhancements, bug fixes, or new features.
+
+License
+This project is licensed under the MIT License. You can find more details in the LICENSE file.
+
 ## Dataset
 
 The dataset used in this project contains a variety of features, including borrower information, loan purpose, loan amount, interest rate, and more. It also includes information about historical loan defaults, which serve as the target variable for our credit default prediction.
@@ -35,4 +63,3 @@ To install the required libraries, you can use `pip`:
 
 ```bash
 pip install -r requirements.txt
-
